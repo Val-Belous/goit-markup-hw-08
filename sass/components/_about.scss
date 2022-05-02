@@ -1,0 +1,38 @@
+.about {
+  padding-bottom: 94px;
+}
+
+.about__list {
+  display: flex;
+  margin-right: -30px;
+}
+
+.about__item {
+  position: relative;
+
+  margin-right: 30px;
+}
+
+.about__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 10px 82px;
+
+  font-style: normal;
+  font-weight: var(--bold-weight);
+  font-size: var(--small-size);
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: var(--main-ls);
+  text-transform: uppercase;
+
+  color: var(--second-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}

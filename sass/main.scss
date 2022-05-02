@@ -1,0 +1,20 @@
+// Utils styles
+@import './utils/vars';
+
+// Reset styles
+@import './base/reset';
+
+// Base styles
+@import './base/base';
+
+// Header
+@import './layouts/header';
+
+// Components
+@import './components/module';
+
+// Footer
+@import './layouts/footer';
+
+// Vendors
+@import './utils/vendors';

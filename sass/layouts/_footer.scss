@@ -1,0 +1,125 @@
+/* footer */
+
+.footer {
+  text-decoration: none;
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__address {
+  width: 231px;
+  margin-right: 70px;
+}
+
+.footer__list {
+  margin-top: 20px;
+}
+
+.footer__adress-link {
+  color: var(--second-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--small-size);
+  line-height: 1.17;
+  letter-spacing: var(--main-ls);
+
+  display: inline-block;
+
+  transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer__link {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: var(--small-size);
+  line-height: 1.71;
+  letter-spacing: var(--main-ls);
+
+  display: inline-block;
+
+  transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer__social-media {
+  margin-right: 93px;
+}
+
+.footer__subtitle {
+  font-weight: var(--bold-weight);
+  font-size: var(--small-size);
+  line-height: 1.14;
+  letter-spacing: var(--main-ls);
+  text-transform: uppercase;
+  color: var(--second-color);
+  margin-bottom: 20px;
+}
+
+.footer__socials {
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color var(--animation);
+
+  &:focus,
+  &:hover {
+    background-color: var(--accent-color);
+  }
+}
+
+.footer__socials-icon {
+  fill: var(--second-color);
+}
+
+.footer__box {
+  display: flex;
+}
+
+.footer__input {
+  width: 358px;
+  height: 50px;
+  left: 815px;
+  top: 2787px;
+
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  padding: 15px 16px;
+  margin-right: 12px;
+
+  color: var(--second-color);
+}
+
+.footer__button {
+  display: flex;
+  align-items: center;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.footer__icon {
+  fill: var(--second-color);
+  margin-left: 10px;
+}
