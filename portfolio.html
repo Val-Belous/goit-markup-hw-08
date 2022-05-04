@@ -36,7 +36,7 @@
           </ul>
         </nav>
         <ul class="header-contacts">
-          <li class="header__item">
+          <li class="header-contacts__item">
             <a class="header-contacts__link link" href="mailto:info@devstudio.com"
               ><svg class="header__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-mail"></use>
@@ -44,7 +44,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="header__item">
+          <li class="header-contacts__item">
             <a class="header-contacts__link link" href="tel:+380961111111"
               ><svg class="header__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-phone"></use>
@@ -87,7 +87,7 @@
                     class="gallery__img"
                     src="./images/portfolio/img1.jpg"
                     alt="картинки"
-                    width="370"
+                    width="450"
                   />
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -108,7 +108,7 @@
                     class="gallery__img"
                     src="./images/portfolio/img2.jpg"
                     alt="картинки"
-                    width="370"
+                    width="450"
                   />
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -129,7 +129,7 @@
                     class="gallery__img"
                     src="./images/portfolio/img3.jpg"
                     alt="картинки"
-                    width="370"
+                    width="450"
                   />
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -150,7 +150,7 @@
                     class="gallery__img"
                     src="./images/portfolio/img4.jpg"
                     alt="картинки"
-                    width="370"
+                    width="450"
                   />
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -171,7 +171,7 @@
                     class="gallery__img"
                     src="./images/portfolio/img5.jpg"
                     alt="картинки"
-                    width="370"
+                    width="450"
                   />
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -192,7 +192,7 @@
                     class="gallery__img"
                     src="./images/portfolio/img6.jpg"
                     alt="картинки"
-                    width="370"
+                    width="450"
                   />
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -213,7 +213,7 @@
                     class="gallery__img"
                     src="./images/portfolio/img7.jpg"
                     alt="картинки"
-                    width="370"
+                    width="450"
                   />
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -234,7 +234,7 @@
                     class="gallery__img"
                     src="./images/portfolio/img8.jpg"
                     alt="картинки"
-                    width="370"
+                    width="450"
                   />
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -255,7 +255,7 @@
                     class="gallery__img"
                     src="./images/portfolio/img9.jpg"
                     alt="картинки"
-                    width="370"
+                    width="450"
                   />
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -276,85 +276,87 @@
     <!-- подвал -->
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__address">
-          <a href="" class="logo link">Web<span class="footer__logo">Studio</span></a>
-          <address>
-            <ul class="footer__list">
-              <li class="footer__item">
+        <div class="help">
+          <div class="footer__address">
+            <a href="" class="logo link">Web<span class="footer__logo">Studio</span></a>
+            <address>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a
+                    class="footer__adress-link link"
+                    href="https://goo.gl/maps/CBKk37cPQ1fr3sLT9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link link" href="mailto:info@example.com">info@example.com</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link link" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__social-media">
+            <h2 class="footer__subtitle">присоединяйтесь</h2>
+            <!--socialslinks-->
+            <ul class="socials">
+              <li class="socials__item">
                 <a
-                  class="footer__adress-link link"
-                  href="https://goo.gl/maps/CBKk37cPQ1fr3sLT9"
+                  class="socials__link footer__socials"
+                  href="https://www.instagram.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >г. Киев, пр-т Леси Украинки, 26</a
+                  aria-label="ссылка на instagram"
                 >
+                  <svg class="socials__icon footer__socials-icon" width="20" height="20" role="img">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a class="footer__link link" href="mailto:info@example.com">info@example.com</a>
+              <li class="socials__item">
+                <a
+                  class="socials__link footer__socials"
+                  href="https://twitter.com/?lang=ru"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="ссылка на twitter"
+                >
+                  <svg class="socials__icon footer__socials-icon" width="20" height="20" role="img">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a class="footer__link link" href="tel:+380991111111">+38 099 111 11 11</a>
+              <li class="socials__item">
+                <a
+                  class="socials__link footer__socials"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="ссылка на facebook"
+                >
+                  <svg class="socials__icon footer__socials-icon" width="20" height="20" role="img">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a
+                  class="socials__link footer__socials"
+                  href="https://ru.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="ссылка на linkedin"
+                >
+                  <svg class="socials__icon footer__socials-icon" width="20" height="20" role="img">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer__social-media">
-          <h2 class="footer__subtitle">присоединяйтесь</h2>
-          <!--socialslinks-->
-          <ul class="socials">
-            <li class="socials__item">
-              <a
-                class="socials__link footer__socials"
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="ссылка на instagram"
-              >
-                <svg class="socials__icon footer__socials-icon" width="20" height="20" role="img">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                class="socials__link footer__socials"
-                href="https://twitter.com/?lang=ru"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="ссылка на twitter"
-              >
-                <svg class="socials__icon footer__socials-icon" width="20" height="20" role="img">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                class="socials__link footer__socials"
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="ссылка на facebook"
-              >
-                <svg class="socials__icon footer__socials-icon" width="20" height="20" role="img">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                class="socials__link footer__socials"
-                href="https://ru.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="ссылка на linkedin"
-              >
-                <svg class="socials__icon footer__socials-icon" width="20" height="20" role="img">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div>
           <form class="footer__form">
@@ -372,5 +374,8 @@
         </div>
       </div>
     </footer>
+    <!-- Scripts -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/btn.js"></script>
   </body>
 </html>

@@ -1,14 +1,27 @@
 // Buttons
 .filter {
   display: flex;
-  justify-content: center;
-
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
   margin-right: -8px;
+
+  @include mq(tablet) {
+    justify-content: center;
+  }
+
+  @include mq(desktop) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .filter__item {
   margin-right: 8px;
+  margin-bottom: 15px;
+
+  @include mq(mobile-only) {
+    // width: 100%;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -39,20 +52,35 @@
 // end Buttons
 
 .gallery {
-  margin-right: -30px;
-  margin-bottom: -30px;
+  @include mq(mobile) {
+  }
 
-  display: flex;
-  flex-wrap: wrap;
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .gallery__item {
-  margin-right: 30px;
-  margin-bottom: 30px;
+  @include mq(mobile) {
+    margin-bottom: 30px;
+    flex-basis: 450px;
+  }
+
+  @include mq(tablet) {
+    display: flex;
+    flex-basis: 354px;
+  }
+
+  @include mq(desktop) {
+    flex-basis: 370px;
+  }
 }
 
 .gallery__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
 
   transition: box-shadow var(--animation);
 
@@ -75,8 +103,7 @@
   transform: translateY(100%);
   transition: transform var(--animation);
 
-  width: 370px;
-  height: 294px;
+  height: 100%;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: var(--main-ls);
@@ -93,6 +120,7 @@
 }
 
 .gallery__description {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;

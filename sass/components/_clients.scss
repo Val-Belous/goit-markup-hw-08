@@ -1,12 +1,17 @@
 .client__list {
   display: flex;
+  gap: 30px;
+  justify-content: center;
+
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
 }
 
 .client__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
   height: 92px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
@@ -19,11 +24,19 @@
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 }
 
 .client__item {
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (max-width: 1199px) {
+    width: calc((100% - 2 * 30px) / 2);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 3 * 30px) / 3);
   }
 }
 
