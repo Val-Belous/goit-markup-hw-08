@@ -79,6 +79,16 @@
   }
 }
 
+.current-add {
+  color: var(--accent-color);
+}
+
+.mobile-menu__list {
+  & .mobile-menu__link.current-add {
+    color: var(--accent-color);
+  }
+}
+
 .header-contacts {
   @include mq(mobile-only) {
     display: none;

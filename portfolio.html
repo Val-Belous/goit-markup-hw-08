@@ -68,7 +68,7 @@
               <a href="index.html" class="mobile-menu__link link">Студия</a>
             </li>
             <li class="mobile-menu__item">
-              <a href="./portfolio.html" class="mobile-menu__link link current">Портфолио</a>
+              <a href="./portfolio.html" class="mobile-menu__link link current-add">Портфолио</a>
             </li>
             <li class="mobile-menu__item">
               <a href="" class="mobile-menu__link link">Контакты</a>
@@ -113,7 +113,7 @@
           <!-- BUTTONS -->
           <ul class="filter">
             <li class="filter__item">
-              <button class="button filter__button" type="button">Все</button>
+              <button class="button filter__button current-filter" type="button">Все</button>
             </li>
             <li class="filter__item">
               <button class="button filter__button" type="button">Веб-сайты</button>
@@ -133,12 +133,32 @@
             <li class="gallery__item">
               <a class="link gallery__link" href="">
                 <div class="gallery__box">
-                  <img
-                    class="gallery__img"
-                    src="./images/portfolio/img1.jpg"
-                    alt="картинки"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img1-lg.jpg    1x,
+                        ./images/portfolio/img1@2x-lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="./images/portfolio/img1-m.jpg 1x, ./images/portfolio/img1@2x-m.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="./images/portfolio/img1-s.jpg 1x, ./images/portfolio/img1@2x-s.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery__img"
+                      src="./images/portfolio/img1-s.jpg"
+                      alt="картинки"
+                      width="450"
+                    />
+                  </picture>
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -154,12 +174,32 @@
             <li class="gallery__item">
               <a class="link gallery__link" href="">
                 <div class="gallery__box">
-                  <img
-                    class="gallery__img"
-                    src="./images/portfolio/img2.jpg"
-                    alt="картинки"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img2-lg.jpg    1x,
+                        ./images/portfolio/img2@2x-lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="./images/portfolio/img2-m.jpg 1x, ./images/portfolio/img2@2x-m.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="./images/portfolio/img2-s.jpg 1x, ./images/portfolio/img2@2x-s.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery__img"
+                      src="./images/portfolio/img2-s.jpg"
+                      alt="картинки"
+                      width="450"
+                    />
+                  </picture>
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -175,12 +215,32 @@
             <li class="gallery__item">
               <a class="link gallery__link" href="">
                 <div class="gallery__box">
-                  <img
-                    class="gallery__img"
-                    src="./images/portfolio/img3.jpg"
-                    alt="картинки"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img3-lg.jpg    1x,
+                        ./images/portfolio/img3@2x-lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="./images/portfolio/img3-m.jpg 1x, ./images/portfolio/img3@2x-m.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="./images/portfolio/img3-s.jpg 1x, ./images/portfolio/img3@2x-s.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery__img"
+                      src="./images/portfolio/img3-s.jpg"
+                      alt="картинки"
+                      width="450"
+                    />
+                  </picture>
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -196,12 +256,32 @@
             <li class="gallery__item">
               <a class="link gallery__link" href="">
                 <div class="gallery__box">
-                  <img
-                    class="gallery__img"
-                    src="./images/portfolio/img4.jpg"
-                    alt="картинки"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img4-lg.jpg    1x,
+                        ./images/portfolio/img4@2x-lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="./images/portfolio/img4-m.jpg 1x, ./images/portfolio/img4@2x-m.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="./images/portfolio/img4-s.jpg 1x, ./images/portfolio/img4@2x-s.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery__img"
+                      src="./images/portfolio/img4-s.jpg"
+                      alt="картинки"
+                      width="450"
+                    />
+                  </picture>
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -217,12 +297,32 @@
             <li class="gallery__item">
               <a class="link gallery__link" href="">
                 <div class="gallery__box">
-                  <img
-                    class="gallery__img"
-                    src="./images/portfolio/img5.jpg"
-                    alt="картинки"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img5-lg.jpg    1x,
+                        ./images/portfolio/img5@2x-lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="./images/portfolio/img5-m.jpg 1x, ./images/portfolio/img5@2x-m.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="./images/portfolio/img5-s.jpg 1x, ./images/portfolio/img5@2x-s.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery__img"
+                      src="./images/portfolio/img5-s.jpg"
+                      alt="картинки"
+                      width="450"
+                    />
+                  </picture>
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -238,12 +338,32 @@
             <li class="gallery__item">
               <a class="link gallery__link" href="">
                 <div class="gallery__box">
-                  <img
-                    class="gallery__img"
-                    src="./images/portfolio/img6.jpg"
-                    alt="картинки"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img6-lg.jpg    1x,
+                        ./images/portfolio/img6@2x-lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="./images/portfolio/img6-m.jpg 1x, ./images/portfolio/img6@2x-m.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="./images/portfolio/img6-s.jpg 1x, ./images/portfolio/img6@2x-s.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery__img"
+                      src="./images/portfolio/img6-s.jpg"
+                      alt="картинки"
+                      width="450"
+                    />
+                  </picture>
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -259,12 +379,32 @@
             <li class="gallery__item">
               <a class="link gallery__link" href="">
                 <div class="gallery__box">
-                  <img
-                    class="gallery__img"
-                    src="./images/portfolio/img7.jpg"
-                    alt="картинки"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img7-lg.jpg    1x,
+                        ./images/portfolio/img7@2x-lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="./images/portfolio/img7-m.jpg 1x, ./images/portfolio/img7@2x-m.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="./images/portfolio/img7-s.jpg 1x, ./images/portfolio/img7@2x-s.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery__img"
+                      src="./images/portfolio/img7-s.jpg"
+                      alt="картинки"
+                      width="450"
+                    />
+                  </picture>
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -280,12 +420,32 @@
             <li class="gallery__item">
               <a class="link gallery__link" href="">
                 <div class="gallery__box">
-                  <img
-                    class="gallery__img"
-                    src="./images/portfolio/img8.jpg"
-                    alt="картинки"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img8-lg.jpg    1x,
+                        ./images/portfolio/img8@2x-lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="./images/portfolio/img8-m.jpg 1x, ./images/portfolio/img8@2x-m.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="./images/portfolio/img8-s.jpg 1x, ./images/portfolio/img8@2x-s.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery__img"
+                      src="./images/portfolio/img8-s.jpg"
+                      alt="картинки"
+                      width="450"
+                    />
+                  </picture>
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -301,12 +461,32 @@
             <li class="gallery__item">
               <a class="link gallery__link" href="">
                 <div class="gallery__box">
-                  <img
-                    class="gallery__img"
-                    src="./images/portfolio/img9.jpg"
-                    alt="картинки"
-                    width="450"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img9-lg.jpg    1x,
+                        ./images/portfolio/img9@2x-lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="./images/portfolio/img9-m.jpg 1x, ./images/portfolio/img9@2x-m.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="./images/portfolio/img9-s.jpg 1x, ./images/portfolio/img9@2x-s.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class="gallery__img"
+                      src="./images/portfolio/img9-s.jpg"
+                      alt="картинки"
+                      width="450"
+                    />
+                  </picture>
                   <p class="gallery__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании

@@ -187,8 +187,8 @@
 }
 
 .check__box {
-  margin-left: -24px;
-  margin-top: 4px;
+  margin-left: -33px;
+  margin-top: -1px;
   margin-right: 7px;
   width: 16px;
   height: 15px;
@@ -209,6 +209,11 @@
     background-color: var(--accent-color);
     fill: var(--second-color);
     border: 0;
+  }
+
+  @include mq(desktop) {
+    margin-top: 4px;
+    margin-left: -24px;
   }
 }
 
