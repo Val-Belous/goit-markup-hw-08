@@ -1061,8 +1061,14 @@ img {
   .help {
     display: flex;
     align-items: baseline;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__address {
+    margin-right: 165px;
   }
 }
 
