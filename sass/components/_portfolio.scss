@@ -120,11 +120,15 @@
   color: var(--second-color);
   background-color: var(--accent-color);
 
-  padding: 63px 24px;
+  padding: 10px 20px;
 
   .gallery__link:hover &,
   .gallery__link:focus & {
     transform: translateY(0);
+  }
+
+  @include mq(mobile) {
+    padding: 63px 24px;
   }
 }
 

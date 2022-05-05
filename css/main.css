@@ -760,12 +760,18 @@ img {
   letter-spacing: var(--main-ls);
   color: var(--second-color);
   background-color: var(--accent-color);
-  padding: 63px 24px;
+  padding: 10px 20px;
 }
 
 .gallery__link:hover .gallery__text,
 .gallery__link:focus .gallery__text {
   transform: translateY(0);
+}
+
+@media screen and (min-width: 480px) {
+  .gallery__text {
+    padding: 63px 24px;
+  }
 }
 
 .gallery__description {
