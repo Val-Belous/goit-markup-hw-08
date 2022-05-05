@@ -54,6 +54,10 @@ body {
   color: var(--title-text-color);
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 button {
   font-family: inherit;
 }
@@ -363,6 +367,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
@@ -756,7 +761,7 @@ img {
   transform: translateY(100%);
   transition: transform var(--animation);
   height: 100%;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.56;
   letter-spacing: var(--main-ls);
   color: var(--second-color);
@@ -823,7 +828,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -47%) scale(1);
   transition: transform 500ms ease-in-out 500ms;
   width: 100%;
   max-width: 450px;
@@ -835,6 +840,12 @@ img {
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1329,9 +1340,16 @@ img {
 
 .mobile-menu__social-link {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 10px;
   line-height: 1.22;
-  letter-spacing: 0.02em;
+  letter-spacing: 0em;
   color: #2196f3;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-menu__social-link {
+    font-size: 18px;
+    letter-spacing: 0.02em;
+  }
 }
 /*# sourceMappingURL=main.css.map */
