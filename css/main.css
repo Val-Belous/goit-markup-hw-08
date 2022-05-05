@@ -270,7 +270,7 @@ img {
 .burger-btn {
   display: inline-flex;
   position: relative;
-  z-index: 100;
+  z-index: 120;
   margin-left: auto;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -301,6 +301,7 @@ img {
 }
 
 .burger-btn__icon-close {
+  z-index: 122;
   opacity: 0;
 }
 
@@ -1217,7 +1218,7 @@ img {
   padding: 40px;
   display: flex;
   flex-direction: column;
-  z-index: 101;
+  z-index: 110;
   transform: translateX(100%);
   transition: transform 250ms ease;
   background-color: white;
@@ -1276,11 +1277,12 @@ img {
 
 .mobile-menu__contact-link-phone {
   color: #2196f3;
+  font-size: 34px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .mobile-menu__contact-link-phone {
-    font-size: 34px;
+    font-size: 25px;
   }
 }
 

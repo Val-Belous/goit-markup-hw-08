@@ -8,7 +8,7 @@
   padding: 40px;
   display: flex;
   flex-direction: column;
-  z-index: 101;
+  z-index: 110;
 
   transform: translateX(100%);
   transition: transform 250ms ease;
@@ -67,9 +67,10 @@
 
 .mobile-menu__contact-link-phone {
   color: #2196f3;
+  font-size: 34px;
 
-  @media screen and(max-width:480px) {
-    font-size: 34px;
+  @media screen and(max-width:479px) {
+    font-size: 25px;
   }
 }
 

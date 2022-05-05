@@ -146,7 +146,7 @@
 .burger-btn {
   display: inline-flex;
   position: relative;
-  z-index: 100;
+  z-index: 120;
   // width: 40px;
   // height: 40px;
   margin-left: auto;
@@ -176,6 +176,7 @@
 }
 
 .burger-btn__icon-close {
+  z-index: 122;
   opacity: 0;
 }
 
